@@ -235,13 +235,21 @@
       <button [disabled]="! isValidUser()">Save button</button>
       <button (click)="cancelSubscription()">cancel Subscription</button>
       <button (click)="cancleSubscription($event)">cancel Subscription</button>
+      
       @if(isAdmin()){
-        <h1>Admin Block Excuted</h1>
+        <h1>Admin Block Excuted using if ... else</h1>
       }@else{
-        <h1>Admin blocked Not executed</h1>
+        <h1>Admin blocked Not executed using if ... else</h1>
       }
-    </div>
-    
+
+      <h3>User profile using for Loop.</h3>
+      <ul class="user-badge-list">
+        @for(badge of badges(); track badge.id){
+          <li class="user-badge">{{badge.name}}</li>
+        }
+      </ul>
+
+    </div> 
   </div>
 </main>
 

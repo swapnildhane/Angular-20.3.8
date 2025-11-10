@@ -43,4 +43,14 @@ export class App {
     return true;
   }
 
+  private _badges = [
+    { id: 1, name: 'Gold' },
+    { id: 2,  name: 'Silver' },
+    { id: 3,  name: 'Bronze' }
+  ];
+
+  badges(){
+    return this._badges;
+    
+  }
 }
