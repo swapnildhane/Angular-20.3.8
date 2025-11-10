@@ -235,7 +235,11 @@
       <button [disabled]="! isValidUser()">Save button</button>
       <button (click)="cancelSubscription()">cancel Subscription</button>
       <button (click)="cancleSubscription($event)">cancel Subscription</button>
-
+      @if(isAdmin()){
+        <h1>Admin Block Excuted</h1>
+      }@else{
+        <h1>Admin blocked Not executed</h1>
+      }
     </div>
     
   </div>
