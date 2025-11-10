@@ -44,13 +44,12 @@ export class App {
   }
 
   private _badges = [
-    { id: 1, name: 'Gold' },
-    { id: 2,  name: 'Silver' },
-    { id: 3,  name: 'Bronze' }
+    // { id: 1, name: 'Gold' },
+    // { id: 2,  name: 'Silver' },
+    // { id: 3,  name: 'Bronze' }
   ];
 
   badges(){
-    return this._badges;
-    
+    return this._badges;   
   }
 }
