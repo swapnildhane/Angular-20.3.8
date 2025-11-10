@@ -33,4 +33,9 @@ export class App {
     console.log("Subscription cancelled.")
     return;
   }
+
+  cancleSubscription(event:Event){
+    console.log("Event",event);
+    return;
+  }
 }
