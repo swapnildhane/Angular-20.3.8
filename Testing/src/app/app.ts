@@ -38,4 +38,9 @@ export class App {
     console.log("Event",event);
     return;
   }
+
+  isAdmin(){
+    return true;
+  }
+
 }
