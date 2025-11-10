@@ -1,6 +1,7 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, reflectComponentType, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { first } from 'rxjs';
+import { Receipt } from './receipt/receipt';
 
 
 // Signals
@@ -18,7 +19,7 @@ console.log(firstNameCapitalized());
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Receipt],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
@@ -54,4 +55,6 @@ export class App {
   }
 
   userPermission = 'Admin';
+
 }
+
