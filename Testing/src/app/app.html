@@ -244,8 +244,10 @@
 
       <h3>User profile using for Loop.</h3>
       <ul class="user-badge-list">
-        @for(badge of badges(); track badge.id){
-          <li class="user-badge">{{badge.name}}</li>
+        @for(badge of badges(); track $index;let idx= $index, e =$even){
+          <li class="user-badge">#{{idx}} : {{1}}</li>
+        }@empty {
+          <p>There is not list available</p>
         }
       </ul>
 
