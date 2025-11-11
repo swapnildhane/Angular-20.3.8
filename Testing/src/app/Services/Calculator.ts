@@ -7,4 +7,7 @@ export class Calculator {
   add(x:number,y:number){
     return x+y;
   }
+  Mul(x:number,y:number){
+    return x*y;
+  }
 }
