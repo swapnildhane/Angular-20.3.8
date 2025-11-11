@@ -9,4 +9,5 @@ import { Calculator } from '../Services/Calculator';
 export class Receipt {
   private calculator = inject(Calculator);
   totalCost = this.calculator.add(50, 25);
+  totalMul = this.calculator.Mul(12,12);
 }
