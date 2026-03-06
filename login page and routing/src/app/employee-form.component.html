@@ -1,0 +1,47 @@
+<h2>Employee Details Form</h2>
+
+<div class="form-container">
+
+  <div>
+    <label>Employee Name</label><br>
+    <input type="text" [(ngModel)]="employee.name">
+  </div>
+
+  <br>
+
+  <div>
+    <label>Email</label><br>
+    <input type="email" [(ngModel)]="employee.email">
+  </div>
+
+  <br>
+
+  <div>
+    <label>Mobile</label><br>
+    <input type="text" [(ngModel)]="employee.mobile">
+  </div>
+
+  <br>
+
+  <div>
+    <label>Department</label><br>
+    <input type="text" [(ngModel)]="employee.department">
+  </div>
+
+  <br>
+
+  <div>
+    <label>Salary</label><br>
+    <input type="number" [(ngModel)]="employee.salary">
+  </div>
+
+  <br>
+
+  <button (click)="save()" class="save">Save</button>
+  <button (click)="reset()" class="reset">Reset</button>
+
+  <p *ngIf="message" style="margin-top:10px; color:green;">
+    {{ message }}
+  </p>
+
+</div>

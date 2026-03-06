@@ -1,0 +1,21 @@
+<hello [name]="name"></hello>
+
+<div class="mt-3">
+  <div class="col-lg-2">
+    <label>UserId</label><br/>
+    <input type="text" [(ngModel)]="UserId">
+  </div>
+  <br>
+
+  <div class="col-lg-2">
+    <label>Password</label><br/>
+    <input type="password" [(ngModel)]="password">
+  </div>
+  <br/>
+
+  <button type="button" class="login-btn" (click)="Login()">Login</button>
+
+  <p *ngIf="message" style="margin-top:10px;">
+    {{ message }}
+  </p>
+</div>
