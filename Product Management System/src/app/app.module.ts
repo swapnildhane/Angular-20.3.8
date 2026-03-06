@@ -5,10 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { JitCompilerFactory } from '@angular/platform-browser-dynamic';
+import { PriceFilterPirce } from './price-filter.pipe';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
+  declarations: [ AppComponent, HelloComponent, PriceFilterPirce ],
   bootstrap:    [ AppComponent ],
   providers: [
     { provide: COMPILER_OPTIONS, useValue: {}, multi: true },

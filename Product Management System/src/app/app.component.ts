@@ -12,7 +12,7 @@ export class AppComponent  {
 
   name = '';
   price = 0;
-  filterPrice = '';
+  filterPrice = 0;
 
   constructor(public ProductService: ProductService) {}
 
