@@ -1,0 +1,18 @@
+<div class="login-container">
+<div class="login-card">
+  <h2>Login to Access Website</h2>
+  <form (ngSubmit)="onLogin()">
+    <div class="form-group">
+      <label>Username : </label>
+      <input type="text" [(ngModel)]="username" name="username" required placeholder="username" autocomplete="off">
+    </div><br>
+    <div class="form-group">
+      <label>Password : </label>
+      <input type="password" [(ngModel)]="password" name="password" required placeholder="password">
+    </div><br>
+    <button type="submit" [disabled]="!username || !password">Login</button>
+  </form>
+  <p class="demo-info">Demo: <strong>admin</strong> / <strong>12345</strong></p>
+  <p *ngIf="error" class="error">{{ error }}</p>
+</div>
+</div>
